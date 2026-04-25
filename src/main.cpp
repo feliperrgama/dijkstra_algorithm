@@ -6,5 +6,6 @@ using namespace std;
 
 int main() {
   json graph = readGraphinJson("../data/graph.json");
-  menu(graph);
+
+  dijkstra(graph, menu(graph));
 }
